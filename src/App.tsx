@@ -58,6 +58,10 @@ const Title = styled.h1`
   text-align: center;
   margin: 60px 0;
   animation: ${Bouncing} 1s linear infinite alternate;
+
+  @media (prefers-reduced-motion: reduce) {
+   animation: none;
+  }
 `;
 
 const Header = styled.header`
